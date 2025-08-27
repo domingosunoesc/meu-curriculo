@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo</title>
+  <style>
+    /* Reset e configuração global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background: #f9fafb;
+    }
+
+    /* Coluna lateral */
+    .sidebar {
+      width: 25%;
+      background: linear-gradient(to bottom, #009999, #006666);
+      color: #fff;
+      padding: 1rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .profile-photo {
+      width: 96px;
+      height: 96px;
+      background: #ddd;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar h3 {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      margin-top: 0.5rem;
+      padding: 0.75rem;
+      min-height: 60px;
+    }
+
+    /* Coluna principal */
+    .main {
+      flex: 1;
+      padding: 1.5rem;
+    }
+
+    .section {
+      margin-bottom: 1.5rem;
+    }
+
+    .section h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+
+    .content-box {
+      background: #f3f6f8;
+      border-radius: 8px;
+      padding: 1rem;
+      min-height: 60px;
+    }
+
+    /* Projetos */
+    .projects {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .project-card {
+      flex: 1;
+      background: #f9fbfc;
+      border-radius: 8px;
+      min-height: 100px;
+      padding: 0.75rem;
+    }
+
+    /* Disponibilidade */
+    .availability {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Coluna lateral -->
+  <aside class="sidebar">
+    <div class="profile-photo"></div>
+
+    <h3>Contato</h3>
+    <div class="box"></div>
+
+    <h3>Habilidades</h3>
+    <div class="box"></div>
+
+    <h3>Idiomas</h3>
+    <div class="box"></div>
+  </aside>
+
+  <!-- Coluna principal -->
+  <main class="main">
+    <section class="section">
+      <h2>Resumo</h2>
+      <div class="content-box"></div>
+    </section>
+
+    <section class="section">
+      <h2>Experiência</h2>
+      <div class="content-box" style="min-height:120px;"></div>
+    </section>
+
+    <section class="section">
+      <h2>Projetos</h2>
+      <div class="projects">
+        <div class="project-card"></div>
+        <div class="project-card"></div>
+        <div class="project-card"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Formação</h2>
+      <div class="content-box"></div>
+    </section>
+
+    <p class="availability">Disponível para trabalho remoto e presencial.</p>
+  </main>
+</body>
+</html>
